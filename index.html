@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="js/script.js"></script> -->
+  </head>
+
+  <style>
+
+  body {
+      font-size: 64px;
+      background-color: black;
+  }
+
+  .container {
+    justify-content: center;
+   }
+
+   #Ans {
+  background-color: black;
+  color: white;
+  text-align: right;
+}
+
+.silver {
+  background-color: silver;
+  color: black;
+}
+
+.orange {
+  background-color: orange;
+}
+
+input {
+  background-color: dimgray;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 50%;
+
+}
+
+button {
+  font-size: 26px;
+}
+
+  </style>
+
+  <body>
+
+      <h1>Calculator</h1>
+
+  <form id="Calculator">
+
+      <div class="container">
+
+        <input type="text" id="Ans" >
+        <br>
+        <input type="button" value="1" onclick="one()">
+        <input type="button" value="2" onclick="two()">
+        <input type="button" value="3" onclick="three()">
+        <input class="orange" type="button" value="+" onclick="plus()">
+        <br>
+        <input type="button" value="4" onclick="four()">
+        <input type="button" value="5" onclick="five()">
+        <input type="button" value="6" onclick="six()">
+        <input class="orange" type="button" value="-" onclick="minus()">
+        <br>
+        <input type="button" value="7" onclick="seven()">
+        <input type="button" value="8" onclick="eight()">
+        <input type="button" value="9" onclick="nine()">
+        <input class="orange" type="button" value="*" onclick="multiply()">
+        <br>
+        <input class="silver" type="button" value="c" onclick="c()">
+        <input type="button" value="0" onclick="zero()">
+        <input type="button" value="=" onclick="equal()">
+        <input class="orange" type="button" value="÷" onclick="divise()">
+
+      </div>
+
+    </form>
+  <script>
+
+  function one(){
+    document.getElementById('Ans').value +='1';
+  }
+  function two(){
+    document.getElementById('Ans').value +='2';
+  }
+  function three(){
+    document.getElementById('Ans').value +='3';
+  }
+  function plus(){
+    document.getElementById('Ans').value +='+';
+  }
+
+  function four(){
+    document.getElementById('Ans').value +='4';
+  }
+  function five(){
+    document.getElementById('Ans').value +='5';
+  }
+  function six(){
+    document.getElementById('Ans').value +='6';
+  }
+  function minus(){
+    document.getElementById('Ans').value +='-';
+  }
+
+  function seven(){
+    document.getElementById('Ans').value +='7';
+  }
+  function eight(){
+    document.getElementById('Ans').value +='8';
+  }
+  function nine(){
+    document.getElementById('Ans').value +='9';
+  }
+  function multiply(){
+    document.getElementById('Ans').value +='*';
+  }
+
+  function c(){
+    document.getElementById('Ans').value ='';
+  }
+  function zero(){
+    document.getElementById('Ans').value +='0';
+  }
+  function equal(){
+    document.getElementById('Ans').value = eval(document.getElementById('Ans').value);
+  }
+  function divise(){
+    document.getElementById('Ans').value +='/';
+  }
+
+
+  </script>
+  </body>
+</html>
